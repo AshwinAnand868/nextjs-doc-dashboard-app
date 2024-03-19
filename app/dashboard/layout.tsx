@@ -11,3 +11,5 @@ export default function Layout({children}: {children: ReactNode}) {
         </div>
     );
 }
+
+// layout.tsx, page.tsx
