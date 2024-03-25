@@ -35,7 +35,6 @@ export async function fetchRevenue() {
 }
 
 export async function fetchLatestInvoices() {
-
   noStore();
 
   try {
@@ -58,7 +57,6 @@ export async function fetchLatestInvoices() {
 }
 
 export async function fetchCardData() {
-
   noStore();
 
   try {
@@ -240,7 +238,7 @@ export async function fetchFilteredCustomers(query: string) {
 
 export async function getUser(email: string) {
   noStore();
-  
+
   try {
     const user = await sql`SELECT * FROM users WHERE email=${email}`;
     return user.rows[0] as User;
